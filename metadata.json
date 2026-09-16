@@ -1,0 +1,6 @@
+{
+  "name": "HoneyMilk Cakes and Steeze",
+  "description": "Boutique bakery web app offering honey-gold artisan cakes, bespoke custom order requests, interactive cart & checkout, and admin order management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

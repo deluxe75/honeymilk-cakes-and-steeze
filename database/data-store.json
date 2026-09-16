@@ -1,0 +1,471 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category_slug": "celebration",
+      "name": "The Golden Honeycomb Velvet",
+      "slug": "golden-honeycomb-velvet",
+      "description": "Our defining masterpiece. Four tiers of wildflower honey sponge soaked in golden bourbon syrup, layered with house-made honeycomb crunch praline and whipped Madagascar vanilla bean cream.",
+      "base_price": 48000,
+      "image_url": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Chef Signature",
+      "is_featured": true,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 24
+    },
+    {
+      "id": 2,
+      "category_slug": "celebration",
+      "name": "Steeze Pistachio & Cardamom Noir",
+      "slug": "pistachio-cardamom-noir",
+      "description": "Raw pistachio dacquoise cake, scented with freshly crushed green cardamom, layered with whipped white chocolate ganache and edged in 24k edible gold dust.",
+      "base_price": 54000,
+      "image_url": "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Editor Favorite",
+      "is_featured": true,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 24
+    },
+    {
+      "id": 3,
+      "category_slug": "birthday",
+      "name": "Midnight Valrhona & Espresso Ganache",
+      "slug": "midnight-valrhona-espresso",
+      "description": "70% Guanaja single-origin dark chocolate layers layered with smoked espresso buttercream and salted caramel pearls, crowned with obsidian drip.",
+      "base_price": 46000,
+      "image_url": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Bestseller",
+      "is_featured": true,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 18
+    },
+    {
+      "id": 4,
+      "category_slug": "wedding",
+      "name": "The Alabaster Architectural Tier",
+      "slug": "alabaster-architectural-tier",
+      "description": "Modern minimalism meeting haute pâtisserie. 3 sculpted white marble tiers filled with champagne sponge and passionfruit-rose curd. Serves up to 75.",
+      "base_price": 145000,
+      "image_url": "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Couture Commission",
+      "is_featured": true,
+      "is_popular": false,
+      "is_available": true,
+      "prep_time_hours": 72
+    },
+    {
+      "id": 5,
+      "category_slug": "mini",
+      "name": "HoneyMilk Bento Duo Box",
+      "slug": "honeymilk-bento-duo-box",
+      "description": "Two 4-inch bespoke bento cakes in our signature eco-luxe takeaway box with bamboo forks and beeswax candle. Choose custom messages for each.",
+      "base_price": 26000,
+      "image_url": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Trending",
+      "is_featured": true,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 12
+    },
+    {
+      "id": 6,
+      "category_slug": "cupcakes",
+      "name": "24k Honeyed Gold Cupcake Box (Dozen)",
+      "slug": "24k-gold-cupcake-box",
+      "description": "Twelve handcrafted honey cupcakes filled with dulce de leche and topped with Swiss meringue buttercream and genuine 24k gold leaf.",
+      "base_price": 32000,
+      "image_url": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Box of 12",
+      "is_featured": false,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 12
+    },
+    {
+      "id": 7,
+      "category_slug": "birthday",
+      "name": "Red Velvet Steeze & Cream Cheese Silk",
+      "slug": "red-velvet-steeze",
+      "description": "Traditional Southern red velvet reimagined with cocoa nib crunch, silky Philadelphia cream cheese mousse, and dramatic scarlet velvet spray.",
+      "base_price": 45000,
+      "image_url": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Classic",
+      "is_featured": false,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 18
+    },
+    {
+      "id": 8,
+      "category_slug": "anniversary",
+      "name": "Strawberries & Normandy Cream Cloud",
+      "slug": "strawberries-normandy-cream",
+      "description": "Chiffon sponge drenched in elderflower nectar, layered with macerated Japanese strawberries and light-as-air Normandy cultured cream.",
+      "base_price": 42000,
+      "image_url": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Fresh Fruit",
+      "is_featured": true,
+      "is_popular": false,
+      "is_available": true,
+      "prep_time_hours": 24
+    },
+    {
+      "id": 9,
+      "category_slug": "celebration",
+      "name": "Caramelized Pecan & Salted Brown Butter",
+      "slug": "pecan-brown-butter-cake",
+      "description": "Nutty roasted brown butter cake with slow-cooked bourbon caramel, toasted Georgia pecans, and fleur de sel flakes.",
+      "base_price": 49000,
+      "image_url": "https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Limited Batch",
+      "is_featured": false,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 24
+    },
+    {
+      "id": 10,
+      "category_slug": "mini",
+      "name": "Matcha Ceremonial & White Peach Mini",
+      "slug": "matcha-white-peach-mini",
+      "description": "Uji ceremonial grade green tea sponge paired with delicate white peach compote and silky mascarpone frosting.",
+      "base_price": 28000,
+      "image_url": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Single / Duo",
+      "is_featured": false,
+      "is_popular": false,
+      "is_available": true,
+      "prep_time_hours": 18
+    },
+    {
+      "id": 11,
+      "category_slug": "dessert_boxes",
+      "name": "The Steeze Tasting Flight Box",
+      "slug": "steeze-tasting-flight-box",
+      "description": "A luxury tasting box containing 6 signature cake slices, 6 French macarons, and a 100ml jar of our artisanal Catskills honey drizzle.",
+      "base_price": 38000,
+      "image_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Gift Box",
+      "is_featured": true,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 24
+    },
+    {
+      "id": 12,
+      "category_slug": "wedding",
+      "name": "Modern Cascading Pearl 2-Tier",
+      "slug": "modern-cascading-pearl-2-tier",
+      "description": "Two stately tiers with raw hand-torn wafer paper ruffles and edible sugar pearls. Serves 35-40 guests in sheer opulence.",
+      "base_price": 92000,
+      "image_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80",
+      "badge": "Wedding Tier",
+      "is_featured": false,
+      "is_popular": true,
+      "is_available": true,
+      "prep_time_hours": 48
+    }
+  ],
+  "options": [
+    {
+      "id": 1,
+      "option_type": "size",
+      "name": "6 Inch (6 - 8 Servings)",
+      "price_adjustment": 0,
+      "is_default": true,
+      "sort_order": 1
+    },
+    {
+      "id": 2,
+      "option_type": "size",
+      "name": "8 Inch (12 - 16 Servings)",
+      "price_adjustment": 18000,
+      "is_default": false,
+      "sort_order": 2
+    },
+    {
+      "id": 3,
+      "option_type": "size",
+      "name": "10 Inch (20 - 25 Servings)",
+      "price_adjustment": 36000,
+      "is_default": false,
+      "sort_order": 3
+    },
+    {
+      "id": 4,
+      "option_type": "size",
+      "name": "12 Inch (30 - 38 Servings)",
+      "price_adjustment": 58000,
+      "is_default": false,
+      "sort_order": 4
+    },
+    {
+      "id": 5,
+      "option_type": "flavor",
+      "name": "Signature Wildflower Honeycomb",
+      "price_adjustment": 0,
+      "is_default": true,
+      "sort_order": 1
+    },
+    {
+      "id": 6,
+      "option_type": "flavor",
+      "name": "Madagascar Bourbon Vanilla",
+      "price_adjustment": 0,
+      "is_default": false,
+      "sort_order": 2
+    },
+    {
+      "id": 7,
+      "option_type": "flavor",
+      "name": "Valrhona Dark Chocolate Noir",
+      "price_adjustment": 2000,
+      "is_default": false,
+      "sort_order": 3
+    },
+    {
+      "id": 8,
+      "option_type": "flavor",
+      "name": "Red Velvet Steeze",
+      "price_adjustment": 2000,
+      "is_default": false,
+      "sort_order": 4
+    },
+    {
+      "id": 9,
+      "option_type": "flavor",
+      "name": "Roasted Pistachio & Cardamom",
+      "price_adjustment": 4000,
+      "is_default": false,
+      "sort_order": 5
+    },
+    {
+      "id": 10,
+      "option_type": "filling",
+      "name": "Whipped Honeycomb Buttercream",
+      "price_adjustment": 0,
+      "is_default": true,
+      "sort_order": 1
+    },
+    {
+      "id": 11,
+      "option_type": "filling",
+      "name": "Salted Dulce de Leche Caramel",
+      "price_adjustment": 1500,
+      "is_default": false,
+      "sort_order": 2
+    },
+    {
+      "id": 12,
+      "option_type": "filling",
+      "name": "Belgian Dark Chocolate Ganache",
+      "price_adjustment": 2000,
+      "is_default": false,
+      "sort_order": 3
+    },
+    {
+      "id": 13,
+      "option_type": "addon",
+      "name": "Custom Acrylic Cake Topper",
+      "price_adjustment": 4500,
+      "is_default": false,
+      "sort_order": 1
+    },
+    {
+      "id": 14,
+      "option_type": "addon",
+      "name": "24K Edible Gold Leaf Accents",
+      "price_adjustment": 6000,
+      "is_default": false,
+      "sort_order": 2
+    },
+    {
+      "id": 15,
+      "option_type": "addon",
+      "name": "Handcrafted Organic Fresh Floral Spray",
+      "price_adjustment": 7500,
+      "is_default": false,
+      "sort_order": 3
+    }
+  ],
+  "orders": [
+    {
+      "id": 2,
+      "order_number": "HM-20260915-859",
+      "customer_name": "Chioma Adeyemi",
+      "customer_email": "chioma@example.ng",
+      "customer_phone": "+234 802 345 6789",
+      "customer_whatsapp": "+234 802 345 6789",
+      "delivery_type": "delivery",
+      "delivery_state": "Lagos State",
+      "delivery_city": "Lagos",
+      "delivery_area": "Lekki Phase 1",
+      "delivery_address": "Block 12, Admiralty Way, Lekki",
+      "delivery_date": "2026-09-22",
+      "delivery_time_slot": "12:00 PM - 3:00 PM (Afternoon Tea)",
+      "cake_message": "Happy 25th Steeze Queen",
+      "subtotal": 48500,
+      "delivery_fee": 4500,
+      "discount": 0,
+      "tax": 0,
+      "total": 53000,
+      "payment_method": "paystack",
+      "payment_status": "pending",
+      "order_status": "pending",
+      "created_at": "2026-09-15T15:23:22.902Z",
+      "updated_at": "2026-09-15T15:23:22.902Z",
+      "items": [
+        {
+          "product_name": "Signature Steeze Cake",
+          "size_selected": "8\" Classic (12-16 Servings)",
+          "flavor_selected": "Signature Wildflower Honeycomb",
+          "filling_selected": "Whipped Honey-Gold Buttercream",
+          "addons_selected": [
+            "24K Edible Gold Leaf Flakes"
+          ],
+          "unit_price": 48500,
+          "quantity": 1,
+          "subtotal": 48500
+        }
+      ],
+      "timeline": [
+        {
+          "status": "pending",
+          "notes": "Order placed by customer via online bakery",
+          "created_at": "2026-09-15T15:23:22.902Z",
+          "changed_by": "Customer"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "order_number": "HM-20260915-101",
+      "customer_name": "Damilola Adeleke",
+      "customer_email": "damilola@example.com",
+      "customer_phone": "+234 803 123 4567",
+      "customer_whatsapp": "+234 803 123 4567",
+      "delivery_type": "delivery",
+      "delivery_state": "Lagos",
+      "delivery_city": "Lagos",
+      "delivery_area": "Ikoyi",
+      "delivery_address": "Plot 12, Alexander Avenue, Ikoyi, Lagos",
+      "delivery_date": "2026-09-16",
+      "delivery_time_slot": "1:00 PM - 3:00 PM",
+      "cake_message": "Happy 30th Birthday Dami!",
+      "subtotal": 66000,
+      "delivery_fee": 4500,
+      "discount": 0,
+      "tax": 0,
+      "total": 70500,
+      "payment_method": "paystack",
+      "payment_status": "paid",
+      "order_status": "preparing",
+      "paystack_reference": "PAY_HM_SAMPLE_001",
+      "created_at": "2026-09-15T13:22:43.009Z",
+      "updated_at": "2026-09-15T13:22:43.009Z",
+      "items": [
+        {
+          "product_id": 1,
+          "product_name": "The Golden Honeycomb Velvet",
+          "size_selected": "8 Inch (12 - 16 Servings)",
+          "flavor_selected": "Signature Wildflower Honeycomb",
+          "filling_selected": "Whipped Honeycomb Buttercream",
+          "addons_selected": [
+            "Custom Acrylic Cake Topper"
+          ],
+          "unit_price": 66000,
+          "quantity": 1,
+          "subtotal": 66000,
+          "item_notes": "Please pipe inscription in gold calligraphy"
+        }
+      ],
+      "timeline": [
+        {
+          "status": "pending",
+          "notes": "Order placed by customer",
+          "created_at": "2026-09-15T13:22:43.009Z",
+          "changed_by": "Customer"
+        },
+        {
+          "status": "confirmed",
+          "notes": "Payment verified via Paystack",
+          "created_at": "2026-09-15T13:34:43.009Z",
+          "changed_by": "Paystack"
+        },
+        {
+          "status": "preparing",
+          "notes": "Honey sponge baking in Soho oven",
+          "created_at": "2026-09-15T14:52:43.009Z",
+          "changed_by": "Head Baker Simone"
+        }
+      ]
+    }
+  ],
+  "custom_orders": [
+    {
+      "id": 1,
+      "reference_id": "CUSTOM-HM-001248",
+      "name": "Zainab Balogun",
+      "email": "zainab@example.com",
+      "phone": "+234 812 555 9012",
+      "occasion": "Architectural Wedding",
+      "cake_type": "3-Tier Sculpture with Wave Textures",
+      "flavor": "Champagne & Rose Elderflower",
+      "size": "3-Tier Grand Statement (75 - 100 servings)",
+      "budget_tier": "₦250,000 - ₦400,000",
+      "event_date": "2026-10-12",
+      "servings": 80,
+      "cake_message": "Zainab & Kazeem Forever",
+      "special_instructions": "Minimalist brutalist wave textures with raw edible gold leaf accents matching the wedding invitation suite.",
+      "estimated_price": 320000,
+      "status": "reviewing",
+      "images": [
+        "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "created_at": "2026-09-15T09:22:43.009Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "author_name": "Tiwa Savage-Ade",
+      "location": "Victoria Island, Lagos",
+      "rating": 5,
+      "comment": "The Golden Honeycomb Velvet was the absolute crown jewel of my 30th birthday dinner. Not overly sugary, decadent moisture, and the honeycomb praline texture was incredible!",
+      "created_at": "2026-09-10"
+    },
+    {
+      "5": 5,
+      "id": 2,
+      "author_name": "David Adeleke Jr.",
+      "location": "Ikoyi, Lagos",
+      "comment": "HoneyMilk Cakes brought unmatched steeze to our brand launch. The architectural tiers looked like modern sculptures and tasted even better. 10/10 recommend.",
+      "created_at": "2026-09-12"
+    },
+    {
+      "id": 3,
+      "author_name": "Dr. Chidinma Okafor",
+      "location": "Lekki Phase 1",
+      "rating": 5,
+      "comment": "I ordered the Bento Duo for our anniversary. The presentation, the bespoke calligraphy inscription, and the pistachio cream were unmatched in Lagos.",
+      "created_at": "2026-09-14"
+    }
+  ],
+  "settings": {
+    "bakery_name": "HoneyMilk Cakes and Steeze",
+    "bakery_tagline": "Where Haute Pâtisserie Meets Unapologetic Steeze",
+    "currency_symbol": "₦",
+    "currency_code": "NGN",
+    "contact_phone": "+234 814 000 2253",
+    "contact_whatsapp": "+234 814 000 2253",
+    "contact_email": "concierge@honeymilksteeze.com",
+    "studio_address": "14B Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
+    "opening_hours": "Tuesday – Saturday: 9:00 AM – 7:30 PM | Sunday: 10:00 AM – 5:00 PM",
+    "standard_delivery_fee": "4500.00",
+    "free_delivery_threshold": "90000.00",
+    "paystack_public_key": "pk_test_sample_honeymilk_public_key"
+  }
+}
