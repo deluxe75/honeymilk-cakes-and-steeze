@@ -82,13 +82,7 @@
 
 ---
 
-## 🔐 Admin Credentials
 
-- **Username**: `admin`
-- **Password**: `honeymilk2026!`
-- Accessible directly at `/admin`; the portal is intentionally hidden from the public storefront navigation.
-
----
 
 ## 📡 REST API Endpoints
 
