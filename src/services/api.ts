@@ -195,6 +195,21 @@ export const api = {
     return res.data;
   },
 
+  async getCurrentAdmin(): Promise<AdminUser> {
+    const res = await apiClient.get('/auth/me');
+    const admin = res.data.data;
+    const adminRoles = ['super_admin', 'head_baker', 'concierge'];
+    if (!admin?.admin_id || !adminRoles.includes(admin.role)) {
+      throw new Error('Administrator authentication required');
+    }
+    return {
+      id: Number(admin.admin_id),
+      username: admin.username,
+      name: admin.name,
+      role: admin.role,
+    };
+  },
+
   // ----------------------------------------------------
   // SETTINGS & REVIEWS
   // ----------------------------------------------------

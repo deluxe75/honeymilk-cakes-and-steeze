@@ -35,7 +35,7 @@ if ($method === 'POST' && $path === 'admin-login') {
     $stmt->execute([$username]);
     $admin = $stmt->fetch();
 
-    if ($admin && (password_verify($password, $admin['password_hash']) || $password === 'honeymilk2026!' || $password === 'Admin@HoneyMilk2026')) {
+    if ($admin && password_verify($password, $admin['password_hash'])) {
         // Update last login
         $db->prepare("UPDATE admins SET last_login = NOW() WHERE id = ?")->execute([$admin['id']]);
 

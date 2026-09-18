@@ -131,9 +131,6 @@ export const Footer: React.FC = () => {
           <div className="flex items-center space-x-6">
             <Link to="/about" className="hover:text-[#E6B655] transition-colors">About Us</Link>
             <Link to="/contact" className="hover:text-[#E6B655] transition-colors">Contact</Link>
-            <Link to="/admin" className="hover:text-[#E6B655] transition-colors flex items-center gap-1 text-[#E6B655]">
-              <span>Admin Portal</span>
-            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingBag, Menu, X, Sparkles, Shield, Cake } from 'lucide-react';
+import { ShoppingBag, Menu, X, Sparkles, Cake } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 export const Navbar: React.FC = () => {
@@ -69,18 +69,8 @@ export const Navbar: React.FC = () => {
             ))}
           </nav>
 
-          {/* Right Actions: Admin & Cart */}
+          {/* Right Actions: Cart */}
           <div className="flex items-center space-x-3">
-            <Link
-              to="/admin"
-              title="Admin Order Portal"
-              id="nav-admin-link"
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full border border-[#D5C2AA] text-[#6E5446] hover:text-[#2C221E] hover:border-[#B37B1B] hover:bg-[#FAF4EC] transition-colors"
-            >
-              <Shield className="w-3.5 h-3.5 text-[#B37B1B]" />
-              <span>Admin</span>
-            </Link>
-
             {/* Cart Button */}
             <button
               onClick={openCart}
@@ -129,16 +119,6 @@ export const Navbar: React.FC = () => {
               {link.name}
             </Link>
           ))}
-          <div className="pt-2 border-t border-[#EADFCF]/60">
-            <Link
-              to="/admin"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-[#8C6239] hover:bg-[#F4EBDE] rounded-xl"
-            >
-              <Shield className="w-4 h-4" />
-              <span>Admin Order & Catalog Portal</span>
-            </Link>
-          </div>
         </div>
       )}
     </header>

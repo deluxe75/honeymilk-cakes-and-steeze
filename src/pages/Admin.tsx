@@ -42,13 +42,11 @@ import {
 } from '../types';
 
 export const Admin: React.FC = () => {
-  const [currentUser, setCurrentUser] = useState<AdminUser | null>(() => {
-    const saved = localStorage.getItem('honeymilk_admin_user');
-    return saved ? JSON.parse(saved) : null;
-  });
+  const [currentUser, setCurrentUser] = useState<AdminUser | null>(null);
+  const [checkingAuth, setCheckingAuth] = useState(true);
 
   const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('Admin@HoneyMilk2026');
+  const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -83,6 +81,25 @@ export const Admin: React.FC = () => {
   // Settings form
   const [savingSettings, setSavingSettings] = useState(false);
   const [settingsSuccess, setSettingsSuccess] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('honeymilk_admin_token');
+    if (!token) {
+      setCheckingAuth(false);
+      return;
+    }
+
+    api.getCurrentAdmin()
+      .then((admin) => {
+        localStorage.setItem('honeymilk_admin_user', JSON.stringify(admin));
+        setCurrentUser(admin);
+      })
+      .catch(() => {
+        localStorage.removeItem('honeymilk_admin_token');
+        localStorage.removeItem('honeymilk_admin_user');
+      })
+      .finally(() => setCheckingAuth(false));
+  }, []);
 
   useEffect(() => {
     if (currentUser) {
@@ -121,6 +138,14 @@ export const Admin: React.FC = () => {
       };
     }
   }, [currentUser, soundEnabled]);
+
+  if (checkingAuth) {
+    return (
+      <div className="min-h-screen bg-[#171412] flex items-center justify-center text-[#E6B655]">
+        <Shield className="w-7 h-7 animate-pulse" aria-label="Checking administrator access" />
+      </div>
+    );
+  }
 
   const loadOrders = async () => {
     try {
@@ -361,10 +386,6 @@ export const Admin: React.FC = () => {
               </button>
             </form>
 
-            <div className="mt-6 pt-4 border-t border-[#F4EFEA] text-[11px] text-[#8A7565] text-center">
-              Default Credentials: <code className="bg-stone-100 px-1 py-0.5 rounded">admin</code> /{' '}
-              <code className="bg-stone-100 px-1 py-0.5 rounded">Admin@HoneyMilk2026</code>
-            </div>
           </div>
         </div>
       </div>

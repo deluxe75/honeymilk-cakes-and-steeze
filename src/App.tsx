@@ -15,7 +15,6 @@ import { OrderConfirmation } from './pages/OrderConfirmation';
 import { OrderTracking } from './pages/OrderTracking';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
-import { Admin } from './pages/Admin';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -28,39 +27,38 @@ function ScrollToTop() {
   return null;
 }
 
+function AppRoutes() {
+  const routes = (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/product/:id" element={<ProductDetail />} />
+      <Route path="/custom-order" element={<CustomOrder />} />
+      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/order-confirmation/:orderNumber" element={<OrderConfirmation />} />
+      <Route path="/track-order" element={<OrderTracking />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
+  );
+
+  return (
+    <div className="min-h-screen flex flex-col bg-[#FDFBF7] text-[#2C221E] selection:bg-[#E6B655] selection:text-[#2C221E]">
+      <Navbar />
+      <CartDrawer />
+      <main className="flex-grow">{routes}</main>
+      <Footer />
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <CartProvider>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col bg-[#FDFBF7] text-[#2C221E] selection:bg-[#E6B655] selection:text-[#2C221E]">
-          {/* Main Navigation Bar */}
-          <Navbar />
-
-          {/* Cart Slideover Drawer */}
-          <CartDrawer />
-
-          {/* Main Content Area */}
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/menu" element={<Menu />} />
-              <Route path="/product/:id" element={<ProductDetail />} />
-              <Route path="/custom-order" element={<CustomOrder />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/order-confirmation/:orderNumber" element={<OrderConfirmation />} />
-              <Route path="/track-order" element={<OrderTracking />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/admin" element={<Admin />} />
-              {/* Fallback route */}
-              <Route path="*" element={<Home />} />
-            </Routes>
-          </main>
-
-          {/* Global Footer */}
-          <Footer />
-        </div>
+        <AppRoutes />
       </CartProvider>
     </BrowserRouter>
   );

@@ -86,7 +86,7 @@
 
 - **Username**: `admin`
 - **Password**: `honeymilk2026!`
-- Accessible at `/admin` (or by clicking the **"Admin Access"** button in the footer / navigation).
+- Accessible directly at `/admin`; the portal is intentionally hidden from the public storefront navigation.
 
 ---
 

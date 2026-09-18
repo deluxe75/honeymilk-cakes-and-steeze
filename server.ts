@@ -1070,6 +1070,10 @@ app.post('/api/reviews', (req, res) => {
 // --------------------------------------------------------------------
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
+    app.use((req, _res, next) => {
+      if (req.path === '/admin') req.url = '/admin.html';
+      next();
+    });
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa'
@@ -1078,6 +1082,9 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
+    app.get('/admin', (_req, res) => {
+      res.sendFile(path.join(distPath, 'admin.html'));
+    });
     app.get('*', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
